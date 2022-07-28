@@ -1,0 +1,4 @@
+rclone copy testData/ jacobstestbucket:ods-concurrency -vv -P --s3-disable-checksum --s3-chunk-size=75M --transfers=1 --s3-upload-concurrency=1 --log-file=rclone_test.txt
+
+#now we want to call the same file transfer for the transfer-service
+
